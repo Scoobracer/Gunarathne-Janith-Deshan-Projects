@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vote Now</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #eef6fb; text-align: center; padding: 30px; }
+    h1 { color: #003366; }
+    .candidate-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 40px;
+    }
+    .candidate {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 8px #ccc;
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+    }
+    .candidate img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .candidate h3 { margin: 10px 0 5px 0; }
+    .candidate p { margin: 5px 0; color: #555; }
+    .vote-button {
+      margin-top: 15px;
+      padding: 10px 25px;
+      background: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose Your Candidate and Vote</h1>
+
+  <form method="POST">
+    <div class="candidate-container">
+      {% for number, candidate in candidates.items() %}
+      <div class="candidate">
+        <img src="{{ url_for('static', filename='images/' + candidate.image) }}" alt="{{ candidate.name }}" />
+        <h3>{{ candidate.name }}</h3>
+        <p>Party: {{ candidate.party }}</p>
+        <p>Number: {{ number }}</p>
+        <button class="vote-button" type="submit" name="candidate" value="{{ number }}">
+          Vote 🗳️
+        </button>
+      </div>
+      {% endfor %}
+    </div>
+  </form>
+</body>
+</html>

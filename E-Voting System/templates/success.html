@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vote Successful</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #d4edda; color: #155724; text-align: center; padding: 100px; }
+    h1 { font-size: 3em; margin-bottom: 20px; }
+    p { font-size: 1.3em; }
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      padding: 10px 20px;
+      background: #155724;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Thank You for Voting!</h1>
+  <p>Your vote for <strong>{{ candidate.name }}</strong> has been successfully recorded.</p>
+  <a href="{{ url_for('results') }}">See Election Results</a>
+</body>
+</html>

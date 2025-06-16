@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Election Results</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff9e6; padding: 30px; }
+    h1 { text-align: center; color: #7a4f01; }
+    table {
+      width: 80%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px #d2b48c;
+    }
+    th, td {
+      padding: 12px 20px;
+      border: 1px solid #d2b48c;
+      text-align: center;
+    }
+    th {
+      background-color: #f0e6c8;
+      font-weight: bold;
+      color: #5a3e01;
+    }
+  </style>
+</head>
+<body>
+  <h1>Election Results</h1>
+  <table>
+    <tr>
+      <th>Candidate Name</th>
+      <th>Party</th>
+      <th>Number</th>
+      <th>Votes</th>
+    </tr>
+    {% for number, candidate in candidates.items() %}
+    <tr>
+      <td>{{ candidate.name }}</td>
+      <td>{{ candidate.party }}</td>
+      <td>{{ number }}</td>
+      <td>{{ candidate.votes }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
