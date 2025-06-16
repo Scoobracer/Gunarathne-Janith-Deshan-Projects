@@ -1,0 +1,5 @@
+apple                120.0 x4   = LKR 480.00
+toothpaste           250.0 x3   = LKR 750.00
+
+---
+TOTAL: LKR 1230.00

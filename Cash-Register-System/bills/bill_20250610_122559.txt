@@ -1,0 +1,13 @@
+===== Grocery Bill =====
+Date: 2025-06-10 12:25:59
+Customer: Deshika
+
+Item              Price  Qty  Disc%  Price After Disc     Total
+----------------------------------------------------------------------
+apple            120.00    6    0.0            120.00    720.00
+rice             200.00    2    5.0            190.00    380.00
+----------------------------------------------------------------------
+Total Before Discount: LKR 1100.00
+Total Discount: 6.0%
+Total After Discount: LKR 1034.00
+=======================

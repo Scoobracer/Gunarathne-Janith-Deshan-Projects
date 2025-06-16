@@ -1,0 +1,13 @@
+===== Grocery Bill =====
+Date: 2025-06-10 12:24:03
+Customer: Janith
+
+Item              Price  Qty  Disc%  Price After Disc     Total
+----------------------------------------------------------------------
+mango            180.00    3    5.0            171.00    513.00
+apple            120.00    2    0.0            120.00    240.00
+----------------------------------------------------------------------
+Total Before Discount: LKR 753.00
+Total Discount: 3.0%
+Total After Discount: LKR 730.41
+=======================

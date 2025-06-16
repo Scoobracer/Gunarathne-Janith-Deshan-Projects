@@ -1,0 +1,7 @@
+mango                180.0 x2   = LKR 360.00
+milk                 240.0 x3   = LKR 720.00
+bread                180.0 x1   = LKR 180.00
+soap                 120.0 x5   = LKR 600.00
+
+---
+TOTAL: LKR 1860.00
